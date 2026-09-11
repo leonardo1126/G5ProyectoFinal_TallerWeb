@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Información sobre la empresa Moda & Estilo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda & Estilo - Nosotros (Empresa)</title>
+</head>
+
+<!-- Dividimos 140px superior para el Header/Nav y el resto para el contenido -->
+<frameset rows="200, *" frameborder="0" border="0" framespacing="0">
+    <!-- Marco Superior: Encabezado general -->
+    <frame src="DescripcionHeader.html" name="headerEmpresa" scrolling="no" noresize>
+
+    <!-- Dividimos el resto: 250px a la izquierda para menú interno y el resto para texto -->
+    <frameset cols="250, *" frameborder="0" border="0" framespacing="0">
+        <!-- Marco Izquierdo: Menú lateral de secciones -->
+        <frame src="DescripcionMenu.html" name="menuEmpresa">
+        <!-- Marco Derecha/Principal: Información de la empresa -->
+        <frame src="DescripcionNosotros.html" name="contenidoEmpresa">
+    </frameset>
+
+
+</html>
