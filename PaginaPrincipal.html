@@ -1,7 +1,5 @@
-
 <!DOCTYPE html>
 <html lang="es">
-<link rel="stylesheet" href="styles.css">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Tienda de ropa, calzado y accesorios">
@@ -9,207 +7,164 @@
     <meta name="author" content="Estudiante">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Moda & Estilo</title>
-
-    <!-- ESTILOS -->
-  
+    <title>Moda & Estilo - Inicio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- ENCABEZADO -->
     <header>
         <h1>Moda & Estilo</h1>
         <p>Ropa, Calzado y Accesorios</p>
     </header>
-    <nav>
-    <a href="index.html">Inicio</a>
-    <a href="#accesorios">Accesorios</a>
-    <a href="#caballero">Caballero</a>
-    <a href="#dama">Dama</a>
-    <a href="#disfraces">Disfraces</a>
-    <a href="#ofertas">Ofertas</a>
-    <a href="#contacto">Contacto</a>
-     <a href="inicioSesion.html" class="boton-login">
-    Iniciar sesión
-</a>
-</nav>
 
+    <div class="nav">
+        <a href="PaginaPrincipal.html">Inicio</a>
+        <a href="Ropa.html">Ropa</a>
+        <a href="Calzado.html">Calzado</a>
+        <a href="Accesorios.html">Accesorios</a>
+        <a href="OutletsRemates.html">Outlets y remates</a>
+        <a href="DisfracesRepresentacion.html">Disfraces y representaciones</a>
+        <a href="InicioSesion.html" class="boton-login">Iniciar sesión</a>
+        <a href="Descripcion.html" class="boton-login">Nosotros</a>
+    </div>
 
-    <!-- CUERPO DE LA PÁGINA -->
-    <main>
+    <body>
 
-        <!-- INICIO -->
-        <section id="inicio">
+        <div id="inicio">
+            <h2>Bienvenidos </h2>
+            <p>Somos una tienda dedicada a la venta de ropa, calzado y accesorios.</p>
+            <p>Encuentra productos para damas, caballeros de diferentes estilos.</p>
+            <br>
+            <a class="boton" href="#ofertas">Ver nuestras ofertas</a>
+        </div>
 
-            <h2>Bienvenidos a Moda & Estilo </h2>
+        <hr><br>
 
-            <p>
-                Somos una tienda dedicada a la venta de ropa,
-                calzado y accesorios para toda ocasión.
-            </p>
+        <h2 style="text-align: center; color: #2c3e50;">Nuestras Categorías Principales</h2>
+        <br>
 
-            <p>
-                Encuentra productos para damas, caballeros y
-                diferentes estilos.
-            </p>
-
-            <a class="boton" href="#ofertas">
-                Ver nuestras ofertas
-            </a>
-
-        </section>
-
-        <hr>
-
-        <!-- CATEGORÍAS -->
         <div class="categorias">
+            <div class="tarjeta">
+                <img src="Imagenes/Casaca cortaviento.JPG" alt="Disfraces y representaciones" class="tarjeta-img" />
+                <div class="tarjeta-contenido">
+                    <h2>Ropa </h2>
+                    <p>Todo tipo de ropa para varon y mujer.</p>
+                    <ul>
+                        <li>Casacas</li>
+                        <li>Vestidos</li>
+                    </ul>
+                    <a class="boton" href="Ropa.html">Ver catálogo </a>
+                </div>
+            </div>
+                        
+            <div class="tarjeta">
+                <img src="Imagenes/Calzado.JPG" alt="Calzado caballero y dama" class="tarjeta-img" />
+                <div class="tarjeta-contenido">
+                    <h2>Calzado Caballero y Dama</h2>
+                    <p>Encuentra calzado cómodo, moderno y elegante para cualquier evento.</p>
+                    <ul>
+                        <li>Zapatos y Zapatillas</li>
+                        <li>Botines, Tacones y Sandalias</li>
+                    </ul>
+                    <a class="boton" href="Calzado.html">Ver catálogo </a>
+                </div>
+            </div>
 
-            <!-- ACCESORIOS -->
-            <section id="accesorios" class="tarjeta">
+            <div class="tarjeta">
+                <img src="Imagenes/Accesorios.JPG" alt="Accesorios de vestir" class="tarjeta-img" />
+                <div class="tarjeta-contenido">
+                    <h2>Accesorios de Vestir</h2>
+                    <p>Tenemos diferentes accesorios para complementar tu estilo diario o formal.</p>
+                    <ul>
+                        <li>Cinturones y Gorras</li>
+                        <li>Carteras y Billeteras</li>
+                    </ul>
+                    <a class="boton" href="Accesorios.html">Ver catálogo</a>
+                </div>
+            </div>
 
-                <h2> Accesorios de Vestir</h2>
-
-                <p>
-                    Tenemos diferentes accesorios para
-                    complementar tu estilo.
-                </p>
-
-                <ul>
-                    <li>Cinturones</li>
-                    <li>Gorras</li>
-                    <li>Sombreros</li>
-                    <li>Carteras</li>
-                    <li>Billeteras</li>
-                    <li>Bufandas</li>
-                </ul>
-
-            </section>
-
-
-            <!-- CABALLERO -->
-            <section id="caballero" class="tarjeta">
-
-                <h2> Calzado para Caballero</h2>
-
-                <p>
-                    Encuentra calzado cómodo y moderno
-                    para diferentes ocasiones.
-                </p>
-
-                <ul>
-                    <li>Zapatos casuales</li>
-                    <li>Zapatos formales</li>
-                    <li>Zapatillas</li>
-                    <li>Botines</li>
-                </ul>
-
-            </section>
-
-
-            <!-- DAMA -->
-            <section id="dama" class="tarjeta">
-
-                <h2> Calzado y Botas para Dama</h2>
-
-                <p>
-                    Contamos con diferentes modelos de
-                    calzado para damas.
-                </p>
-
-                <ul>
-                    <li>Zapatos</li>
-                    <li>Sandalias</li>
-                    <li>Zapatillas</li>
-                    <li>Botas</li>
-                    <li>Tacones</li>
-                </ul>
-
-            </section>
-
-
-            <!-- DISFRACES -->
-            <section id="disfraces" class="tarjeta">
-
-                <h2>Disfraces y Teatro</h2>
-
-                <p>
-                    Productos para fiestas, eventos,
-                    teatro y representaciones.
-                </p>
-
-                <ul>
-                    <li>Disfraces para niños</li>
-                    <li>Disfraces para adultos</li>
-                    <li>Accesorios para disfraces</li>
-                    <li>Vestuario para teatro</li>
-                    <li>Vestuario para representaciones</li>
-                </ul>
-
-            </section>
+            <div class="tarjeta">
+                <img src="Imagenes/remates.png" alt="" class="tarjeta-img" />
+                <div class="tarjeta-contenido">
+                    <h2>Outlets y remates</h2>
+                    <p>Productos con descuentos.</p>
+                    <ul>
+                        <li>Vestuario de todo tipo</li>
+                    </ul>
+                    <a class="boton" href="OutletsRemates.html">Ver catálogo </a>
+                </div>
+            </div>
+            
+            <div class="tarjeta">
+                <img src="Imagenes/Disfraces.JPG" alt="Disfraces y representaciones" class="tarjeta-img" />
+                <div class="tarjeta-contenido">
+                    <h2>Disfraces y Teatro</h2>
+                    <p>Productos para fiestas, eventos y teatro  .</p>
+                    <ul>
+                        <li>Disfraces para Niños y Adultos</li>
+                        <li>Vestuario Teatral</li>
+                    </ul>
+                    <a class="boton" href="DisfracesRepresentacion.html">Ver catálogo </a>
+                </div>
+            </div>
 
         </div>
 
-        <hr>
+        <br><hr>
+        
+        
+        <div id="ofertas">
+        <fieldset>
+        <legend><h2>Outlets y Remates de Ropa</h2></legend>
+        <p>Aprovecha nuestros descuentos y promociones en productos seleccionados.</p>
 
-        <!-- OFERTAS -->
-        <section id="ofertas">
+        
+        
+        <table class="tabla-ofertas">
+            <tr>
+                <th>Categoría</th>
+                <th>Detalle de la Promoción</th>
+            </tr>
+            <tr>
+                <td>Ropa</td>
+                <td>Precios desde S/ 20.00</td>
+            </tr>
+            <tr>
+                <td>Calzado</td>
+                <td>Descuentos de hasta el 40%</td>
+            </tr>
+            <tr>
+                <td>Accesorios</td>
+                <td>Productos seleccionados en remate</td>
+            </tr>
+        </table>
+        
 
-            <h2> Outlets y Remates de Ropa</h2>
-
-            <p>
-                Aprovecha nuestros descuentos y promociones
-                en productos seleccionados.
-            </p>
-
-            <h3>Ofertas especiales</h3>
-
-            <ul>
-                <li>Ropa desde S/ 20.00</li>
-                <li>Calzado con descuentos</li>
-                <li>Accesorios en remate</li>
-                <li>Promociones por temporada</li>
-            </ul>
-
-            <br>
-
-            <p>
-                Para conocer más información, puedes visitar
-                nuestras redes sociales:
-            </p>
-
-            <a href="https://www.facebook.com/" target="_blank">
+        <p>Para conocer más información, síguenos en redes sociales:</p>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/" target="_blank" class="enlace-red">
+                <img src="Imagenes/FB logo.JPG" alt="Facebook" class="icono-red">
                 Facebook
             </a>
-
-            <br><br>
-
-            <a href="https://www.instagram.com/" target="_blank">
+            <a href="https://www.instagram.com/" target="_blank" class="enlace-red">
+                <img src="Imagenes/IG logo.JPG" alt="Instagram" class="icono-red">
                 Instagram
             </a>
+        </div>
+        </fieldset>    
+    </div>
 
-        </section>
+        
+    </body>
 
-    </main>
-
-    <!-- PIE DE PÁGINA -->
     <footer>
-
-        <p><strong>Moda & Estilo</strong></p>
-
-        <p>Ropa, Calzado y Accesorios</p>
-
-        <p>Contacto: modaestilo@gmail.com</p>
-
-        <p>Arequipa - Perú</p>
-
-        <p>
-            &copy; 2026 Moda & Estilo.
-            Todos los derechos reservados.
-        </p>
-
+        <p><strong>Moda & Estilo</strong> - Ropa, Calzado y Accesorios</p>
+        <p>Contacto: modaestilo@gmail.com | Arequipa - Perú</p>
+        <p>&copy; 2026 Moda & Estilo.</p>
+        
+    </div>
     </footer>
 
 </body>
-
 </html>
