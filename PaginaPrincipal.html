@@ -6,30 +6,99 @@
     <meta name="keywords" content="ropa, calzado, accesorios, zapatos, botas, disfraces">
     <meta name="author" content="Estudiante">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Moda & Estilo - Inicio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
 
-    <header>
-        <h1>Moda & Estilo</h1>
-        <p>Ropa, Calzado y Accesorios</p>
+    <body>
+            <header class="header-ecommerce">
+        
+        <!-- 1. Logo a la izquierda (enlazado al inicio) -->
+        <div class="header-logo">
+            <a href="PaginaPrincipal.html">
+                <img src="logo/logo.jpg" alt="Logo Moda & Estilo" class="logo-img">
+            </a>
+        </div>
+
+        <!-- 2. Botón de Menú -->
+       <!-- 2. Menú lateral -->
+<div class="header-menu-area">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+    <label for="menu-toggle" class="header-menu-btn">
+        <span class="icono-hamburguesa">&#9776;</span>
+        <span>Menú</span>
+    </label>
+
+    <label for="menu-toggle" class="menu-overlay" aria-label="Cerrar menú"></label>
+
+    <nav class="dropdown-menu" aria-label="Menú principal">
+        <div class="menu-header">
+            <h3>¡Hola!</h3>
+            <label for="menu-toggle" class="close-btn" aria-label="Cerrar menú">&times;</label>
+        </div>
+
+        <ul class="menu-list">
+            <li><a href="InicioSesion.html">Inicia sesión</a></li>
+            <li><a href="PaginaPrincipal.html">Inicio</a></li>
+            <li><a href="Ropa.html">Ropa</a></li>
+            <li><a href="Calzado.html">Calzado</a></li>
+            <li><a href="Accesorios.html">Accesorios</a></li>
+            <li><a href="OutletsRemates.html">Outlets y remates</a></li>
+            <li><a href="DisfracesRepresentacion.html">Disfraces y representaciones</a></li>
+            <li><a href="Descripcion.html">Nosotros</a></li>
+        </ul>
+    </nav>
+</div>
+
+        <!-- 3. Barra de Búsqueda central -->
+        <div class="header-search">
+            <input type="text" placeholder="Buscar en Moda & Estilo">
+            <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+        </div>
+
+        <!-- 4. Sección derecha: Usuario, Favoritos y Carrito -->
+        <div class="header-actions">
+            <div class="user-account">
+                <span class="user-greeting">Hola,</span>
+                <a href="InicioSesion.html" class="user-login">Inicia sesión &#9662;</a>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="user-account">
+                <a  class="user-login" style="font-weight: normal;">Mi cuenta</a>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Icono de Favoritos (Nosotros) -->
+            <a href="Descripcion.html" title="Nosotros" class="user-login" style="font-weight: normal;">Nosotros</a>
+
+
+            <div class="divider"></div>
+
+            <!-- Carrito de compras -->
+            <div class="header-cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                <span class="cart-badge">0</span>
+            </div>
+        </div>
+
     </header>
 
-    <div class="nav">
+    <nav class="nav">
         <a href="PaginaPrincipal.html">Inicio</a>
         <a href="Ropa.html">Ropa</a>
         <a href="Calzado.html">Calzado</a>
         <a href="Accesorios.html">Accesorios</a>
         <a href="OutletsRemates.html">Outlets y remates</a>
         <a href="DisfracesRepresentacion.html">Disfraces y representaciones</a>
-        <a href="InicioSesion.html" class="boton-login">Iniciar sesión</a>
-        <a href="Descripcion.html" class="boton-login">Nosotros</a>
-    </div>
+    </nav>
 
-    <body>
 
         <div id="inicio">
             <h2>Bienvenidos </h2>

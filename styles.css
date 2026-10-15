@@ -2,48 +2,171 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: #f8f5f2;
+    font-family: 'Arial', sans-serif;
+    background-color: #FFFFFF;
     color: #333;
     line-height: 1.6;
 }
+body {
+    font-family: Arial, sans-serif;
+}
 
-/* ENCABEZADO */
-header {
-    background-color: black;
+/* Contenedor principal de la barra superior (Header) */
+.header-ecommerce {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 12px 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Estilo del Logo */
+.header-logo img {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* Botón de Menú */
+.header-menu-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.icono-hamburguesa {
+    font-size: 20px;
+}
+
+/* Barra de Búsqueda central con bordes redondeados */
+.header-search {
+    display: flex;
+    flex: 1;
+    max-width: 550px;
+    margin: 0 30px;
+    border: 1px solid #757575;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.header-search input {
+    flex: 1;
+    border: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    outline: none;
+    color: #333;
+}
+
+.header-search input::placeholder {
+    color: #757575;
+}
+
+.header-search button {
+    background-color: #334155;
+    border: none;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     color: #ffffff;
-    text-align: center;
-    padding: 30px;
 }
 
-header h1 {
-    font-size: 2rem;
-    margin-bottom: 0.3rem;
+/* Sección de la derecha (Sesión, Cuenta, Carrito) */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #333;
 }
 
-/* NAVEGACIÓN */
+.user-account {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.user-greeting {
+    color: #666;
+}
+
+.user-login {
+    font-weight: bold;
+    color: #111;
+    text-decoration: none;
+}
+
+.user-login:hover {
+    text-decoration: underline;
+}
+
+/* Líneas divisorias verticales */
+.divider {
+    width: 1px;
+    height: 24px;
+    background-color: #d1d5db;
+}
+
+.header-icon-link {
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+/* Carrito y contador numérico flotante */
+.header-cart {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #333;
+    cursor: pointer;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background-color: #334155;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Barra de navegación secundaria (Tus categorías) */
 .nav {
-    background-color: #4f3545;
-    text-align: center;
-    padding: 0.8rem;
+    background-color: #4a2838; /* Conserva tu color original */
+    padding: 10px 30px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav a {
-    display: inline-block;
     color: white;
     text-decoration: none;
-    font-weight: 700;
-    padding: 0.4rem 0.8rem;
-    margin: 0.2rem 0.3rem;
-    border-radius: 4px;
-    vertical-align: middle;
+    font-size: 14px;
 }
+
 .nav a:hover {
-    background-color: #ffd6e7;
-    color: #4f3545;
+    text-decoration: underline;
 }
 
 .boton-login {
@@ -359,4 +482,116 @@ footer p {
     width: 20px;
     height: 20px;
     object-fit: contain;
+}
+.logo-y-titulo {
+    display: flex;
+    align-items: center; 
+    gap: 15px;
+}
+
+/* Ajusta el tamaño de tu logo */
+.logo-img {
+    width: 150px;       
+    height: 100px;      
+    object-fit: cover; 
+}
+
+/* Estilo para alinear el encabezado completo de tu página */
+.header-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f6f2f9; /* Fondo oscuro acorde a tu captura */
+}
+/* Menú lateral */
+.header-menu-area {
+    position: relative;
+}
+
+.menu-toggle {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.header-menu-btn {
+    user-select: none;
+}
+
+.menu-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: min(280px, 85vw);
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-toggle:checked ~ .dropdown-menu {
+    transform: translateX(0);
+}
+
+.menu-toggle:checked ~ .menu-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.menu-header h3 {
+    color: #4f3545;
+}
+
+.close-btn {
+    font-size: 28px;
+    line-height: 1;
+    color: #333;
+    cursor: pointer;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list a {
+    display: block;
+    padding: 15px 20px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.menu-list a:hover {
+    background-color: #f8f8f8;
+}
+
+.menu-toggle:focus-visible + .header-menu-btn {
+    outline: 2px solid #6c4a5e;
+    outline-offset: 4px;
 }
