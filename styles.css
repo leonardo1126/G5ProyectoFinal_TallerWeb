@@ -595,3 +595,154 @@ footer p {
     outline: 2px solid #6c4a5e;
     outline-offset: 4px;
 }
+-----------
+/* Estilo general del Footer */
+.site-footer {
+  background-color: #12212f; /* Azul oscuro corporativo similar al de la referencia */
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  padding: 40px 20px 20px 20px;
+  font-size: 14px;
+}
+
+/* Distribución de columnas en Grid */
+.footer-columns {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding-bottom: 40px;
+}
+
+
+.footer-col h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  color: #ffffff;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #b0c4de; 
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 25px;
+}
+
+.footer-bottom-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.social-icons a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.legal-links a {
+  color: #b0c4de;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.legal-links a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+
+.footer-copy {
+  color: #8fa3bf;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.footer-copy p {
+  margin: 3px 0;
+}
+/* carrusel de productos */
+.carrusel-ofertas {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carrusel-pista {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carrusel-pista::-webkit-scrollbar {
+    display: none;
+}
+
+.oferta-slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+}
+
+.oferta-slide img {
+    display: block;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+/* Ajuste para celulares */
+@media (max-width: 600px) {
+    .oferta-slide img {
+        height: 200px;
+    }
+}
